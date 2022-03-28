@@ -1,0 +1,162 @@
+
+header{
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: rgb(214, 129, 60);
+    transition: all 1s;
+}
+
+header:hover{
+    background-position: end;
+    height: 170px;
+    background-color: rgb(71, 34, 9);
+}
+
+ul{
+    display: flex;
+    color:white;
+    flex-direction: row;
+
+}
+ul li{
+    margin:50px;
+}
+
+li{
+     list-style: none;
+ }
+
+li img{
+    transition: all .5s;
+}
+
+li img:hover{
+    transform: scale(1.5,1.5);
+}
+
+
+/*Produtos------------------------------------------------------------------*/
+
+h1{
+    text-align: center;
+    font:bold 50px hello;
+    display:flex;
+    margin-left: 130px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1>img{
+   position: relative; 
+    right: 4%;
+}
+
+
+#produtos{
+    left:50%;
+    transform: translate(-50%);
+    position: relative;
+    top:20%;
+    margin-bottom:200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#produtos>h2{
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(243, 183, 127);
+    font: bold 100px Hello;
+    text-shadow: 2px 4px 8px rgb(65, 65, 65);
+}
+
+.item{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex:0 1 auto;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    align-items: center;
+    height: 500px;
+    margin:30px;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.item>.item_produto{
+    text-align: center;
+   background-color: rgb(228, 155, 45);
+   padding:20px;
+   padding-bottom: 4px;
+   border-radius: 30px 0 30px 0 ;
+   box-shadow: 2px 4px 8px rgb(223, 222, 222);
+    transition: transform .5s;
+}
+
+.item>.item_produto:hover{
+    transform: scale(1.1,1.1);
+}
+
+.item_produto>p{
+    padding:0;
+    position: relative;
+    font:bold 15px Caviar Dreams;
+    bottom:10px;
+ 
+}
+
+.item .item_produto h2{
+    font:bold 18px heavitas;
+}
+
+.item_produto>h4{
+    font: bold 25px Hello;
+    margin-top:10px;
+}
+
+
+footer{
+    margin:0 auto;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    height: 20%;
+    padding:20px;
+
+}
+
+footer,b{
+    font:bold 15px caviar dreams;
+    color:white;
+    background-color: rgb(14, 11, 9);
+}
+
+footer>p{
+    position: relative;
+    
+}
+
+#footer2{
+    display:flex;
+    flex-direction: column;
+}
+
+
+#footer2>b{
+    padding:5px;
+    font:bold 20px heavitas
+}
+
+
+#footer2>div{
+    margin-top:-12px;
+}

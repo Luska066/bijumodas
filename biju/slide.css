@@ -1,0 +1,86 @@
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+}
+
+.content{
+    height: 520px;
+    width: 635px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top:50%;
+    left: 50%;
+    background-image: url('https://thumbs.dreamstime.com/b/o-papel-de-fundo-do-ouro-textura-%C3%A9-vintage-velho-cor-afligida-maci%C3%A7o-com-pintura-%C3%A1spera-grunge-da-casca-em-bordas-116115340.jpg');
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+.navigation{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border:2px solid white;
+    margin:6px;
+    border-radius: 0px 5px 0px 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    transition: .4s;
+}
+
+.slide img{
+    border-radius:20px;
+    width: 90%;
+    height: 100%;
+    
+}
+
+#slide1:checked ~.s1{
+    margin-left:0;
+}
+
+#slide2:checked ~.s1{
+    margin-left:-20%;
+}
+
+#slide3:checked ~.s1{
+    margin-left:-40%;
+}
+
+#slide4:checked ~.s1{
+    margin-left:-60%;
+}
+
+#slide5:checked ~.s1{
+    margin-left:-80%;
+}
